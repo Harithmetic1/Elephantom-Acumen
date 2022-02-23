@@ -31,7 +31,7 @@ body{
             flex-direction: column;
             
             .sidebar-img{
-                padding: 56px 85px;
+                padding: 40px 65px;
             }
             .sidebar-links{
                 .slinks{
@@ -130,6 +130,9 @@ body{
                     width: 900px;
                     td{
                         width: 90px;
+                    }
+                    &:nth-child(even){
+                        background-color: #F5F5F5;
                     }
                 }
                 .table-head{

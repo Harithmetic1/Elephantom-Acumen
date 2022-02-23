@@ -8,7 +8,8 @@ import { ElephantContext } from "../context/Elephant";
 
  const TableBody = () => {
 
-    const { elephantData } = useContext(ElephantContext)
+    const { elephantData} = useContext(ElephantContext)
+
     // const [elephantData, setElephantData] = useState([])
      return(
          <>
@@ -37,7 +38,7 @@ import { ElephantContext } from "../context/Elephant";
                                     elephantData ?
                                     elephantData.sort((a, b) => (a.index > b.index) ? 1 : -1)
                                     .map((elephant) => (
-                                    <Tablerow {...elephant} key={elephant._id} />
+                                    <Tablerow {...elephant} key={elephant._id}  />
                                 ))
                                 :
                                 <tr>

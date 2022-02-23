@@ -6,6 +6,7 @@ export const ElephantProvider = ({ children }) => {
     const [elephantData, setElephantData] = useState()
     const [showTable, setShowTable] = useState(true)
     const [showSidebar, setShowSidebar] = useState(true)
+    const [elephantPageId, setElephantPageId] = useState([])
 
     const getElephants = async () => {
         const elephant = await fetch("https://acumen-elephantom.herokuapp.com/elephants/asian").then(res => res.json())
@@ -24,7 +25,9 @@ export const ElephantProvider = ({ children }) => {
             showTable, 
             setShowTable, 
             showSidebar, 
-            setShowSidebar
+            setShowSidebar,
+            elephantPageId,
+            setElephantPageId
         }} >
             { children }
         </ElephantContext.Provider>
