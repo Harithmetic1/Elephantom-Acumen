@@ -8,7 +8,7 @@ export const ElephantProvider = ({ children }) => {
     const [showSidebar, setShowSidebar] = useState(true)
 
     const getElephants = async () => {
-        const elephant = await fetch("http://acumen-elephantom.herokuapp.com/elephants/asian").then(res => res.json())
+        const elephant = await fetch("https://acumen-elephantom.herokuapp.com/elephants/asian").then(res => res.json())
         setElephantData(elephant.data)
         // console.log(elephantData);
     }
